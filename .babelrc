@@ -1,0 +1,16 @@
+{
+    "presets": ["es2015", "stage-2"],
+    "plugins": [
+        ["transform-es2015-template-literals", {
+            "loose": true,
+            "spec": true
+        }]
+    ],
+    "comments": false,
+    "env": {
+        "test": {
+            "presets": ["env", "stage-2"],
+            "plugins": ["istanbul"]
+        }
+    }
+}

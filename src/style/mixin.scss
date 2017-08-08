@@ -1,0 +1,30 @@
+$base-c:#00AE66;
+@mixin bt-1px($cl) {
+    position: relative;
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        content: '';
+        width: 100%;
+        border-top: 1px solid $cl;
+        transform: scaleY(.5);
+        -webkit-transform: scaleY(.5);
+    }
+}
+
+@mixin bb-1px($cl) {
+    position: relative;
+    &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        content: '';
+        width: 100%;
+        border-bottom: 1px solid $cl;
+        transform: scaleY(.5);
+        -webkit-transform: scaleY(.5);
+    }
+}
