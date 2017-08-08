@@ -7,7 +7,7 @@
              <div class="movie-pic">
                  <img class="img0" :src="dataAll.images.large" alt="">
                  <img class="img1" :src="dataAll.images.large" alt="">
-                 <img class="img2" :src="dataAll.images.large" alt="">
+                 <img class="img2" :src="dataAll.images.large" alt="666">
              </div>
          </div>
          
